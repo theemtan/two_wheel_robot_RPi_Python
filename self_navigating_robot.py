@@ -25,7 +25,7 @@ machine = Robot(right=(4,27), left =(18,24))
 while True:
     if ((GPIO.input(left_sensor) == True) & (GPIO.input(right_sensor) == True)):
           print('nothing is in front')
-          sleep(1)
+          sleep(1) # change sleep time according to the reaction of the robot
           machine.forward()
           print('forward')
           sleep(1)
